@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+:root {
+    --family1: "Signika Negative", sans-serif;
+}
+
+h1, h2 {
+    font-family: var(--family1);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
 .splashScreen {
     position: fixed;
     z-index: 1;
@@ -37,4 +55,66 @@
 @keyframes fadeOut {
     0% { opacity: 1}
     100% { opacity: 0}
+}
+
+.pokeball-header {
+    width: 120px;
+    height: 100px;
+}
+
+.hamburguer-logo {
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1.4em;
+}
+
+.button-hamburguer {
+    border: none;
+    background-color: transparent;
+}
+
+main > section {
+    display: inline-flex;
+    place-items: center;
+    padding: 3.3rem;
+}
+
+section > div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 2rem 2rem;
+    background-color: aliceblue;
+}
+
+.profile-pikachu {
+    position: sticky;
+    margin-top: 200px;
+    right: 80%;
+}
+
+.profile-charmander {
+   position: sticky;
+   
+}
+
+div > h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div > p {
+    font-size: 20px;
+}
+
+img {
+    width: 300px;
 }
