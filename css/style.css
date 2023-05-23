@@ -1,83 +1,235 @@
+* {
+    margin: 0;padding: 0;box-sizing: border-box
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@300&display=swap');
+
 
 :root {
     --family1: "Signika Negative", sans-serif;
+    --family2: "Lobster", cursive;
 }
 
-h1, h2 {
-    font-family: var(--family1);
-    font-weight: 300;
+h2 {
+    font-family: var(--family2);
+    font-weight: 100;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
 img {
     max-width: 100%;
+    min-width: 50px;
 }
 
 .pokeball-header {
-    width: 120px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
-.hamburguer-logo {
-    width: 100px;
-    height: 100px;
+.open-menu {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+body{
+    padding: 1.5rem;
+    background: linear-gradient(500deg, #F6CF57, #eddbdc);
 }
 
 header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 2em 1.4em;
+    padding: 1.5rem;
+    align-items: center;
+    font-family: var(--family1);
 }
 
-.button-hamburguer {
-    border: none;
-    background-color: transparent;
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
 }
 
-main > section {
-    display: inline-flex;
-    place-items: center;
-    padding: 3.3rem;
+.nav-list li a {
+    text-decoration: none;
 }
 
-section > div {
-    border: 1px solid black;
+li {
+    font-size: 2rem;
+    
+}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.card { 
+    position: relative;
+    padding: 1rem;
+}
+
+.evolution {
+    position: absolute;
+    opacity: 1;
+    transition: all 1s ease 0.3s;
+}
+
+.profile:hover {
+    opacity: 0;
+}
+
+.profile {
+    border: 3px solid crimson;
+    border-radius: 10%;
     text-align: center;
-    padding: 2rem 2rem;
-    background-color: aliceblue;
+    padding: 1.5rem;
+    background-image: url(/assets/img/background-image-cards.jpg);
+    background-size: cover;
+    min-height: 400px;
+    color: black;
 }
 
-.profile-pikachu {
-    position: sticky;
-    margin-top: 200px;
-    right: 80%;
-}
-
-.profile-charmander {
-   position: sticky;
-   
+.profile > img {
+    min-height: 270px;
+    max-height: 300px;
 }
 
 div > h2 {
-    font-size: 30px;
     font-weight: bold;
 }
 
-div > p {
-    font-size: 20px;
+img {
+    width: 250px;
 }
 
-img {
-    width: 300px;
+.pikachu-img {
+    translate: 10px;
+}
+
+.charmander-img {
+    translate: 0px;
+}
+
+.squirtle-img {
+    translate: 0 10px;
+}
+
+.pidgey-img {
+    translate: -15px 15px;
+}
+
+.growlithe-img {
+    translate: -10px;
+}
+
+.abra-img {
+    translate: 0 50px;
+}
+
+.snorlax-img {
+    translate: 0 25px;
+}
+
+.eevee-img {
+    translate: 10px 10px;
+}
+
+.bulbasaur-img {
+    translate: 0 25px;
+}
+
+.rattata-img {
+    translate: 0 10px;
+}
+
+.jigglypuff-img {
+    translate: 0 20px;
+}
+
+.vulpix-img {
+    translate: 0 -15px;
+}
+
+/* Animación cards */
+.profile {
+    animation: animation-pokemons-opacity 1s ease 0s;
 }
 
 @keyframes animation-pokemons-opacity {
- 0% {
-
+ 20% {
+   opacity: 1;
+   transform: scale(1);
  }
+ 50% {
+    opacity: 0;
+    transform: scale(0.2);
+ }
+}
+
+.evolution {
+    animation: animation-pokemons-opacity 1s ease 0s;
+}
+
+@keyframes animation-pokemons-opacity {
+ 20% {
+   opacity: 1;
+   transform: scale(1);
+ }
+ 50% {
+    opacity: 0;
+    transform: scale(0.2);
+ }
+}
+
+@media screen and (max-width: 721px){
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    .close-menu {
+        color: #ececec;
+        padding: 2px;
+        border: 10px solid black;
+        border-radius: 10px;
+        background-color: black;
+        font-size: 20px;
+    }
+
+    nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 3rem;
+        position: fixed;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        color: #ececec;
+        gap: 3rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
 }
