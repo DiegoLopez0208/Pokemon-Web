@@ -6,139 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Pokedex</title>
-    <style>
-      body {
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSudjl2NhHpZuipB-E4ZyUBFPVlGH_WN0RG20n1FlOlbvm7dkff4LcKQGoQolb8S2mvIIA&usqp=CAU);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <img class="pokeball-header" src="/assets/img/pokeball-header.png" alt="" />
-      <button class="button-hamburguer">
-        <img
-          class="hamburguer-logo"
-          src="https://cdn-icons-png.flaticon.com/512/6499/6499731.png"
-          alt="hamburguer-logo"
-        />
-      </button>
+      <img
+        class="pokeball-header"
+        src="/assets/img/pokeball-header.png"
+        alt=""
+      />
+      <img class="open-menu" id="open" src="/assets/img/pngwing.com.png" alt="">
+      <nav class="nav" id="nav">
+        <button class="close-menu" id="close">Close</button>
+        <ul class="nav-list">
+        <li><a href="#"></a>Pokeballs</li>
+        <li><a href="#"></a>Form</li>
+      </ul>
+    </nav>
     </header>
-
     <main>
-      <section class="card-pokemon1">
-        <div class="profile-pikachu">
-          <img
-            width="240px"
-            height="260px"
-            src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png"
+      <section class="cards">
+        <div class="card 1">
+        <div class="profile evolution">
+          <img class="pikachu-img"
+            src="/assets/img/pikachu-page2.png"
             alt=""
           />
           <h2 class="name-pokemon1">Pikachu</h2>
-          <p class="description-pokemon1">Hi i am Pikachu</p>
+          
         </div>
-      </section>
-      <section class="card-pokemon2">
-        <div class="profile-charmander">
-          <img
-            width="240px"
-            height="260px"
-            src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+        <div class="profile">
+          <img class="raichu-img" src="/assets/img/raichu-page2.png" alt="">
+          <h2 class="name-pokemon1">Raichu</h2>
+          
+        </div>
+      </div>
+      <div class="card 2">
+        <div class="profile evolution">
+          <img class="charmander-img"
+            src="/assets/img/charmander-page2.png"
             alt=""
           />
           <h2 class="name-pokemon2">Charmander</h2>
-          <p class="description-pokemon2">Hi i am Charmander</p>
         </div>
-      </section>
-      <section class="card-pokemon3">
-        <div class="profile-squirtle">
-          <img
-            width="240px"
-            height="260px"
-            src="https://i.pinimg.com/originals/1b/47/3a/1b473a97ded04ac7c5b85eaf2baa5441.png"
+        <div class="profile">
+          <img class="charizard-img" src="https://www.pngmart.com/files/12/Charizard-PNG-Free-Download.png" alt="">
+          <h2 class="name-pokemon2">Charizard</h2>
+        </div>
+      </div>
+      <div class="card 3">
+        <div class="profile evolution">
+          <img class="squirtle-img"
+            src="/assets/img/squirtle-page2.png"
             alt=""
           />
           <h2 class="name-pokemon3">Squirtle</h2>
-          <p class="description-pokemon3">Hi i am Squirtle</p>
         </div>
-      </section>
-      <section class="card-pokemon4">
-        <div class="profile-vulpix">
-          <img
-            width="240px"
-            height="260px"
-            src="https://images.wikidexcdn.net/mwuploads/wikidex/8/8d/latest/20080909115229/Vulpix.png"
+        <div class="profile">
+          <img class="blastoise-img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="">
+          <h2 class="name-pokemon3">Blastoise</h2>
+        </div>
+      </div>
+      <div class="card 4">
+        <div class="profile evolution">
+          <img class="vulpix-img"
+            src="/assets/img/vulpix-page2.png"
             alt=""
           />
           <h2 class="name-pokemon4">Vulpix</h2>
-          <p class="description-pokemon4">Hi i am Vulpix</p>
         </div>
-      </section>
-      <section class="card-pokemon5">
-        <div class="profile-snorlax">
-          <img
-            width="240px"
-            height="260px"
-            src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/0/0b/latest/20160904204605/Snorlax.png/800px-Snorlax.png"
+        <div class="profile">
+          <img class="ninetales-img" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" alt="">
+          <h2 class="name-pokemon4">Ninetales</h2>
+        </div>
+      </div>
+      <div class="card 5">
+        <div class="profile evolution">
+          <img class="snorlax-img"
+            src="/assets/img/snorlax-page2.png"
             alt=""
           />
           <h2 class="name-pokemon5">Snorlax</h2>
-          <p class="description-pokemon5">Hi i am Snorlax</p>
         </div>
-      </section>
-      <section class="card-pokemon6">
-        <div class="profile-eevee">
-          <img
-            width="240px"
-            height="260px"
-            src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c31c.png"
+        <div class="profile">
+          <img class="munchlax-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/8e/latest/20160510005053/Munchlax.png/1200px-Munchlax.png" alt="">
+          <h2 class="name-pokemon5">Munchlax</h2>
+        </div>
+      </div>
+      <div class="card 6">
+        <div class="profile evolution">
+          <img class="caterpie-img"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/0/05/latest/20170615202446/Caterpie.png"
             alt=""
           />
-          <h2 class="name-pokemon6">eevee</h2>
-          <p class="description-pokemon4">Hi i am Eevee</p>
+          <h2 class="name-pokemon6">Caterpie</h2>
         </div>
-      </section>
-      <section class="card-pokemon7">
-        <div class="profile-bulbasaur">
-          <img
-            width="240px"
-            height="260px"
-            src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+        <div class="profile">
+          <img src="https://images.wikidexcdn.net/mwuploads/wikidex/6/6b/latest/20200307022334/Metapod.png" alt="">
+          <h2 class="name-pokemon6">Metapod</h2>
+        </div>
+      </div>
+      <div class="card 7">
+        <div class="profile evolution">
+          <img class="haunter-img"
+            src="https://art.ngfiles.com/images/2692000/2692135_marioshi64_haunter.gif?f1661031666"
             alt=""
           />
-          <h2 class="name-pokemon7">Bulbasaur</h2>
-          <p class="description-pokemon4">Hi i am Bulbasaur</p>
+          <h2 class="name-pokemon7">Haunter</h2>
         </div>
-      </section>
-      <section class="card-pokemon8">
-        <div class="profile-rattata">
-          <img
-            width="240px"
-            height="260px"
-            src="https://images.wikidexcdn.net/mwuploads/wikidex/c/c4/latest/20200307022853/Rattata.png"
+        <div class="profile">
+          <img class="gengar-img" src="/assets/gif/gengar.gif" alt="">
+          <h2 class="name-pokemon7">Gengar</h2>
+        </div>
+      </div>
+      <div class="card 8">
+        <div class="profile evolution">
+          <img class="rattata-img"
+            src="/assets/img/rattata-page2.png"
             alt=""
           />
           <h2 class="name-pokemon8">Rattata</h2>
-          <p class="description-pokemon4">Hi i am Rattata</p>
         </div>
-      </section>
-      <section class="card-pokemon9">
-        <div class="profile-abra">
-          <img
-            width="240px"
-            height="260px"
-            src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png"
+        <div class="profile">
+          <img class="raticate-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/d/d6/latest/20200307022931/Raticate.png" alt="">
+          <h2 class="name-pokemon8">Raticate</h2>
+        </div>
+      </div>
+      <div class="card 9">
+        <div class="profile evolution">
+          <img class="clefairy-img" src="/assets/img/klefairy-page2.png" alt="">
+          <h2 class="name-pokemon9">Clefairy</h2>
+        </div>
+        <div class="profile">
+          <img class="clefable-img"
+            src="/assets/img/clefable-page2.png"
             alt=""
           />
-          <h2 class="name-pokemon9">Abra</h2>
-          <p class="description-pokemon4">Hi i am Abra</p>
+          <h2 class="name-pokemon9">Clefable</h2>
         </div>
+      </div>
+      <div class="card 10">
+        <div class="profile evolution">
+          <img class="pidgey-img" src="/assets/img/pidgey-page2.png" alt="">
+          <h2 class="name-pokemon10">Pidgey</h2>
+        </div>
+        <div class="profile">
+          <img class="pidgeot-img"
+            src="/assets/img/pidgeot-page2.png"
+            alt=""
+          />
+          <h2 class="evolution-pokemon10">Pidgeot</h2>
+        </div>
+      </div>
+      <div class="card 11">
+        <div class="profile evolution">
+          <img class="jigglypuff-img" src="/assets/img/jigglypuff-page2.png" alt="">
+          <h2 class="name-pokemon11">Jigglypuff</h2>
+        </div>
+        <div class="profile">
+          <img class="wigglytuff-img"
+            src="/assets/img/wigglytuff-page2-png.png"
+            alt=""
+          />
+          <h2 class="evolution-pokemon11">Wigglytuff</h2>
+        </div>
+      </div>
+      <div class="card 12">
+        <div class="profile evolution">
+          <img src="/assets/img/growlithe-page2.png" alt="">
+          <h2 class="name-pokemon12">Growlithe</h2>
+        </div>
+        <div class="profile">
+          <img class="arcanine-img"
+            src="/assets/img/arcanine-page2.png"
+            alt=""
+          />
+          <h2 class="evolution-pokemon12">Arcanine</h2>
+        </div>
+      </div>
+    
       </section>
-      
-      
     </main>
-    <footer></footer>
-    <script></script>
+    
+    <footer>
+    </footer>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>

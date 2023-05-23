@@ -75,3 +75,9 @@ div > p {
 img {
     width: 300px;
 }
+
+@keyframes animation-pokemons-opacity {
+ 0% {
+
+ }
+}
