@@ -12,7 +12,7 @@
 }
 
 h2 {
-    font-family: var(--family2);
+    font-family: var(--family1);
     font-weight: 100;
     text-transform: uppercase;
     font-size: 25px;
@@ -67,7 +67,7 @@ li {
     display: none;
 }
 
-section {
+.cards {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
@@ -104,8 +104,77 @@ section {
     max-height: 300px;
 }
 
+div > h3 {
+    font-family: var(--family2);
+    font-size: 15px;
+}
+
 div > h2 {
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+.description1 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #F6CF57;
+    border-radius: 5px;
+    background-color: #F6CF57;
+}
+
+.description2 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #ff9628;
+    border-radius: 5px;
+    background-color: #ff9628;
+}
+
+.description3 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #469cff;
+    border-radius: 5px;
+    background-color: #469cff;
+}
+
+.description4 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #ff9628;
+    border-radius: 5px;
+    background-color: #ff9628;
+}
+
+.description5 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #b3b2be;
+    border-radius: 5px;
+    background-color: #b3b2be;
+}
+
+.description6 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #38a740;
+    border-radius: 5px;
+    background-color: #38a740
+}
+
+.description7 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #9b00aa;
+    border-radius: 5px;
+    background-color: #9b00aa
+}
+
+.description8 {
+    display: flex;
+    justify-content: space-between;
+    border: 6px solid #b3b2be;
+    border-radius: 5px;
+    background-color: #b3b2be
 }
 
 img {
@@ -125,7 +194,7 @@ img {
 }
 
 .pidgey-img {
-    translate: -15px 15px;
+    translate: -15px -5px;
 }
 
 .growlithe-img {
@@ -153,11 +222,15 @@ img {
 }
 
 .jigglypuff-img {
-    translate: 0 20px;
+    translate: 0 10px;
 }
 
 .vulpix-img {
     translate: 0 -15px;
+}
+
+.spearow-img {
+    translate: 0 10px;
 }
 
 /* Animación cards */
@@ -196,6 +269,12 @@ img {
         display: block;
     }
 
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .close-menu {
         color: #ececec;
         padding: 2px;
@@ -219,6 +298,7 @@ img {
         background-color: #1c1c1c;
         padding: 3rem;
         position: fixed;
+        z-index: 99;
     }
 
     .nav-list {
