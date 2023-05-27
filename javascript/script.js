@@ -1,10 +1,18 @@
-let button = document.querySelector('.hiddenButton');
-let splashScreen = document.querySelector ('.splashScreen')
+
+const navMenu = document.querySelector('#nav');
+
+const openMenu = document.querySelector('.open-menu');
+
+const closeMenu = document.querySelector('#close');
 
 window.addEventListener('DOMContentLoaded', () => {
-    button.addEventListener('click', () => {
-        console.log("¡Se presionó el botón!");
-        splashScreen.classList.add('splash-screen-animation')
-        
-    });
-});
+
+openMenu.addEventListener("click", () => {
+    navMenu.classList.add("visible")
+})
+
+closeMenu.addEventListener("click", () => {
+    navMenu.classList.remove("visible")
+})
+
+})
