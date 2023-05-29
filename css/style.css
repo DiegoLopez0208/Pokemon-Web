@@ -234,37 +234,11 @@ img {
     translate: 0 10px;
 }
 
-/* Animación cards */
-.profile {
-    animation: animation-pokemons-opacity 1s ease 0s;
+.mankey-img {
+    translate: 0 40px;
 }
 
-@keyframes animation-pokemons-opacity {
- 20% {
-   opacity: 1;
-   transform: scale(1);
- }
- 50% {
-    opacity: 0;
-    transform: scale(0.2);
- }
-}
-
-.evolution {
-    animation: animation-pokemons-opacity 1s ease 0s;
-}
-
-@keyframes animation-pokemons-opacity {
- 20% {
-   opacity: 1;
-   transform: scale(1);
- }
- 50% {
-    opacity: 0;
-    transform: scale(0.2);
- }
-}
-
+/*mediaquerie logo de hamburguesa*/
 @media screen and (max-width: 721px){
     .open-menu, .close-menu {
         display: block;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="header-init">
+    <header>
+        <img
+          class="pokeball-header"
+          src="/assets/img/pokeball-header.png"
+          alt=""
+        />
+        <img class="open-menu" id="open" src="/assets/img/pngwing.com.png" alt="">
+        <nav class="nav" id="nav">
+            <button class="close-menu" id="close">Close</button>
+            <ul class="nav-list">
+            <li><a href="#"></a>Pokeballs</li>
+            <li><a href="#"></a>Pokedex</li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+        <div class="title">Check in!</div>
+        <form action="#">
+            <div class="users-details">
+                <div class="input-box">
+                    <span class="details">Name:</span>
+                    <input type="text" placeholder="Enter your name..." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last name:</span>
+                    <input type="text" placeholder="Enter your last name..." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">what pokemon would you like to add?:</span>
+                    <input type="text" placeholder="Write the name of the pokemon..." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">what type is the pokemon?:</span>
+                    <input type="text" placeholder="Write the type of pokemon..." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">What generation is the pokemon?:</span>
+                    <input type="text" placeholder="Write the generation of the pokemon..." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">what is the id of the pokemon:</span>
+                    <input type="text" placeholder="Write the id of the pokemon..." required>
+            </div>
+        </div>
+        <div class="button-submit" style="display: grid">
+            <button>Submit</button>
+        </div>
+        </form>
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

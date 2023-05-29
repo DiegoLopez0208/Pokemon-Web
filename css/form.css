@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@300&display=swap');
+
+:root {
+    --family1: "Fugaz One", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--family1);
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://variety.com/wp-content/uploads/2022/12/Screen-Shot-2022-12-16-at-9.31.44-AM-e1671201592808.png?w=681&h=383&crop=1);
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    min-width: 50px;
+}
+
+.header-init {
+    background-color: #ccc;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-left: -10px;
+    top: 0;
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+
+.header-init > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokeball-header {
+    width: 70px;
+    height: 70px;
+}
+
+.open-menu {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+li {
+    font-size: 2rem;
+    
+}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+.container {
+    position: relative;
+    top: 90px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #f4f4f4;
+    padding: 30px 30px;
+    border-radius: 7px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 113px;
+    background-color: #910daf;
+}
+
+.container form .users-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .users-details .input-box {
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+.users-details .input-box .details {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.users-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.users-details .input-box input:focus {
+    border-color: #910daf;
+}
+
+.button-submit > button {
+    padding: 20px 50px;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    background-color: #910daf;
+    transition: all 0.4s ease;
+}
+
+.button-submit > button:hover {
+    transition: all 0.4s ease;
+    background-color: black;
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+    form .users-details .input-box {
+        margin-bottom: 20px;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 900px){
+    .open-menu, .close-menu {
+        display: block;
+    }
+    .close-menu {
+        color: #ececec;
+        padding: 2px;
+        border: 10px solid black;
+        border-radius: 10px;
+        background-color: black;
+        font-size: 20px;
+    }
+
+    nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 3rem;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        color: #ececec;
+        gap: 3rem;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
