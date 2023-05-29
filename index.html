@@ -5,25 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/assets/img/LogoPokeball(1).ico"/>
     <title>Pokemon</title>
 </head>
 <body>
-    <div class = "splashScreen">
-    <img class = "startIMG" src="./assets/gif/rubyGroundon.gif" alt="Descripción del GIF">
+    <main class = "splashScreen">
+        <video class="startIMG" src="./assets/gif/rubyGroundon.webm" alt="Groudon Ruby Video 2Seconds Gif" autoplay loop muted></video>
+    <button class ="pokeball2">
+        <div class ="pokeball-top"></div>
+        <div class ="pokeball-button"></div>
+        <div class= "pokeball-button2"></div>
+    </button>
     <button class ="hiddenButton"></button>
+    <button class="pikachu-button">
+        <section class="pikachu-face">
+        <div class="eye-right"></div>
+        <div class="eye-contact-right"></div>
+        <div class="eye-left"></div>
+        <div class="eye-contact-left"></div>
+        <div class="cheeks-right"></div>
+        <div class="cheeks-left"></div>
+        <div class="noise"></div>
+        <div class="mouth"></div>
+        </section>
+    </button>
     <audio autoplay>
-        <source src="./assets/song/PokemonRubyMainTheme.mp3" type="audio/mp3">
+        <source src="./assets/song/PokemonRubyMainTheme.mp3" type="audio/mp3" controls volume="1">
         Tu navegador no soporta la reproducción de audio.
     </audio>
-    <div class="animation-container">
+    <section class="animation-container">  <!-- Animation Container  -->
         <div class="rectangle"></div>
         <div class="rectanglev2"></div>
         <div class="rectangle"></div>
         <div class="rectanglev2"></div>
         <div class="rectangle"></div>
         <div class="rectanglev2"></div>
-        <div class="rectangle"></div>         
-</div>
+        <div class="rectangle"></div>      
+    </section>
+</main>
     <script src="./javascript/script.js"></script>
 </body>
 </html>
