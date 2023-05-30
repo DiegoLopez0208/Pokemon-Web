@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Signika+Negative:wght@300&display=swap');
 
 
 :root {
@@ -46,7 +47,7 @@ a{
     font-family: 'Kanit', sans-serif;
 }
 body{
-    background: linear-gradient(500deg, #F6CF57, #eddbdc);
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
 div > h2 {
@@ -59,13 +60,15 @@ img {
 p {
     font-size: 25px;
     font-family: 'Kanit', sans-serif;
-    margin-top:55px;
+    margin-top:40px;
 }
 h1{
     color: #1e1e1b;
     font-family: 'Kanit', sans-serif;
     text-decoration: underline;
     text-decoration-color: #1e1e1b;
+    font-weight: bold;
+    font-size: 30px;
 }
 /* NavBar */
 .navbar{
@@ -455,11 +458,22 @@ width: 40px;
     height: 400px;
     margin: 20px;
 }
-.Pokeballs {
+.Generations {
     display:flex;
     align-items: center;
     flex-flow: wrap;
     justify-content: space-around;
+}
+.title-generations{
+    margin:10px;
+    text-align: center;
+    color: #3636fc;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.snagball{
+    border-radius:50%;
 }
 
 .titlePokemon{
@@ -625,7 +639,7 @@ background-color: #F6CF57;
         left:0;
     }
     
-    .Pokeballs  {
+    .Generations  {
         display:flex;
         justify-content: center;
         align-items: center;
