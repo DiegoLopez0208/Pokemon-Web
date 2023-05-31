@@ -12,7 +12,7 @@
     <header>
         <img
           class="pokeball-header"
-          src="/assets/img/pokeball-header.png"
+          src="/assets/img/PikachuIcon.webp"
           alt=""
         />
         <img class="open-menu" id="open" src="/assets/img/pngwing.com.png" alt="">
@@ -28,34 +28,40 @@
     <div class="container">
         <div class="title">Check in!</div>
         <form action="#">
-            <div class="users-details">
+            <div class="users-details" id="form">
                 <div class="input-box">
                     <span class="details">Name:</span>
-                    <input type="text" placeholder="Enter your name..." required>
+                    <input pattern="[a-zA-Z]{4,20}"class="name" id="name" type="text" placeholder="Enter your name..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
                 </div>
                 <div class="input-box">
                     <span class="details">Last name:</span>
-                    <input type="text" placeholder="Enter your last name..." required>
+                    <input pattern="[a-zA-Z]{4,20}" class="last-name" type="text" placeholder="Enter your last name..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
                 </div>
                 <div class="input-box">
                     <span class="details">what pokemon would you like to add?:</span>
-                    <input type="text" placeholder="Write the name of the pokemon..." required>
+                    <input pattern="[a-zA-Z]{4,20}" class="pokemon-add" type="text" placeholder="Write the name of the pokemon..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
                 </div>
                 <div class="input-box">
                     <span class="details">what type is the pokemon?:</span>
-                    <input type="text" placeholder="Write the type of pokemon..." required>
+                    <input pattern="[a-zA-Z]{4,20}" class="type-pokemon" type="text" placeholder="Write the type of pokemon..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
                 </div>
                 <div class="input-box">
                     <span class="details">What generation is the pokemon?:</span>
-                    <input type="text" placeholder="Write the generation of the pokemon..." required>
+                    <input pattern="[a-zA-Z]{4,20}" class="generation-pokemon" type="text" placeholder="Write the generation of the pokemon..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
                 </div>
                 <div class="input-box">
                     <span class="details">what is the id of the pokemon:</span>
-                    <input type="text" placeholder="Write the id of the pokemon..." required>
+                    <input class="id-pokemon" type="number" placeholder="Write the id of the pokemon..." required>
+                    <span class="input-incorrect-numbers">Only numbers are allowed!</span>
             </div>
         </div>
         <div class="button-submit" style="display: grid">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </div>
         </form>
     </div>
