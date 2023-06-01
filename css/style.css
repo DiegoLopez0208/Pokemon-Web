@@ -528,10 +528,10 @@ width: 40px;
 /* Footer */
 footer{
     background: #111;
-    height: auto;
+    height: 250px;
     width: 100vw;
     font-family: "Open Sans";
-    margin-top: 30px;
+    margin-top: 40px;
     color: #fff;
 }
 .footer-content{
@@ -540,18 +540,19 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-top:20px;
+    margin-top:35px;
 }
 .footer-content h3{
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize;
-    line-height: 4rem;
+    line-height: 2rem;
 }
 
 .footer-content p {
     max-width: 400px;
-    margin: 4px auto;
+    margin-top:4px;
+    margin-bottom: 4px;
     line-height: 26px;
     font-size: 14px;
 }
@@ -560,11 +561,14 @@ footer{
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 25px;
 }
 .socials li{
-    margin: 0 45px;
+    align-items: center;
+    margin-top:5px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
 .socials a{
     text-decoration: none;
     color: #fff;
@@ -572,26 +576,31 @@ footer{
 .socials a{
     font-size: 1.1rem;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2901960784);
+    box-shadow: 1px 1px 1px #3636fc;
     transition: all 0.3s ease-in-out;
+    margin:20px;
 }
 
 .socials a:hover{
-    box-shadow: 0 0 60px rgb(206, 205, 205);
-    color: rgb(206, 205, 205);
+    box-shadow: 0 0 60px #e92929;
+    color: #e92929;
 }
 .footer-bottom{
+    display:flex;
+    justify-content: center;
     background: #000;
     width: 100vw;
-    text-align: center;
 }
 .footer-bottom p{
     font-size: 13px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
+.centered-text {
+    text-align: center;
+}
 .footer-bottom span{
-    font-weight: 200px;
+    font-weight: 100px;
     opacity: .4;
 
 }
