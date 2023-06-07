@@ -1,9 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+/*Menu hamburguesa*/
   const navMenu = document.querySelector("#nav");
 
   const openMenu = document.querySelector(".open-menu");
-  
+
   const closeMenu = document.querySelector("#close");
 
   openMenu.addEventListener("click", () => {
@@ -15,13 +16,29 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const form = document.querySelector('form')
+const form = document.querySelector("form");
 
-const inputIncorrect = document.getElementById("input-incorrect")
+/* Declaramos los span para luego usarlos en cada value del input*/
 
-const nameInput = document.getElementById("name");
+const spanInputOne = document.getElementById("input-incorrect-one");
 
-const lastNameInput = document.getElementById("last-name");
+const spanInputTwo = document.getElementById("input-incorrect-two");
+
+const spanInputThree = document.getElementById("input-incorrect-three");
+
+const spanInputFour = document.getElementById("input-incorrect-four");
+
+const spanInputFive = document.getElementById("input-incorrect-five");
+
+const spanInputSix = document.getElementById("input-incorrect-six");
+
+const buttonSend = document.getElementById("send")
+
+/* Declaramos cada uno de los inputs y hacemos una expresión regular para el value de los inputs*/
+
+const inputOne = document.getElementById("name");
+
+const lastNameInput = document.getElementById("lastname");
 
 const pokemonAdd = document.getElementById("pokemon-add");
 
@@ -31,44 +48,116 @@ const generationPokemon = document.getElementById("generation-pokemon");
 
 const idPokemon = document.getElementById("id-pokemon");
 
-const validateInput = (name) => {
-  const regExp = new RegExp(/^[a-z-A-Z\s]+$/)
-  return name.length > 0 && regExp.test(name)
-}
+const regExp = new RegExp(/[a-zA-Z]$/);
 
-const validateIdPokemon = (name) => {
-  const regExp = new RegExp(/^[0-9]+$/)
-  return name.length > 0 && regExp.test(name)
-}
- 
-nameInput.forEach((input) => {
-  input.addEventListener("input", () => {
-    const errorMessage = input.parentElement.querySelector("input-incorrect")
-    errorMessage.classList.toggle(".input-incorrect", isValid)
-  })
-})
+inputOne.addEventListener("input", () => {
+  if(!regExp.test(inputOne.value)){
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault()
+   spanInputOne.classList.remove("input-incorrect2")
 
-  const formData = new FormData(form)
-
-  const name = formData.get('name')
-  const lastName = formData.get('last-name')
-  const addPokemon = formData.get('pokemon-add')
-  const pokemonType = formData.get('type-pokemon')
-  const pokemonGeneration = formData.get('generation-pokemon')
-  const pokemonId = formData.get('id-pokemon')
-
-  const newUser = {
-    name,
-    lastName,
-    addPokemon,
-    pokemonType,
-    pokemonGeneration,
-    pokemonId
+  }else if(regExp.test(inputOne.value === regExp)){
+    spanInputOne.classList.add('input-incorrect2')
   }
+});
 
-sessionStorage.setItem('user', JSON.stringify(newUser))
+lastNameInput.addEventListener("input", () => {
+  if(!regExp.test(lastNameInput.value)){
+
+   spanInputTwo.classList.remove("input-incorrect2")
+
+  }else if(regExp.test(inputOne.value === regExp)){
+    spanInputTwo.classList.add('input-incorrect2')
+  }
+});
+
+pokemonAdd.addEventListener("input", () => {
+  if(!regExp.test(pokemonAdd.value)){
+
+   spanInputThree.classList.remove("input-incorrect2")
+
+  }else if(regExp.test(pokemonAdd.value === regExp)){
+    spanInputThree.classList.add('input-incorrect2')
+  }
+});
+
+typePokemon.addEventListener("input", () => {
+  if(!regExp.test(typePokemon.value)){
+
+   spanInputFour.classList.remove("input-incorrect2")
+
+  }else if(regExp.test(typePokemon.value === regExp)){
+    spanInputFour.classList.add('input-incorrect2')
+  }
+});
+
+generationPokemon.addEventListener("input", () => {
+  if(!regExp.test(generationPokemon.value)){
+
+   spanInputFive.classList.remove("input-incorrect2")
+
+  }else if(regExp.test(generationPokemon.value === regExp)){
+    spanInputFive.classList.add('input-incorrect2')
+  }
+});
+
+/* Usamos el localStorage para almacenar los datos del formulario en la web */
+
+buttonSend.addEventListener("click", () => {
+
+  localStorage.setItem("name", JSON.stringify(inputOne.value))
+
+  const nameLocalStorage = JSON.parse(localStorage.getItem("name"))
+
+  console.log(nameLocalStorage)
+
+});
+
+buttonSend.addEventListener("click", () => {
+
+  localStorage.setItem("lastname", JSON.stringify(lastNameInput.value))
+
+  const nameLocalStorage = JSON.parse(localStorage.getItem("lastname"))
+
+  console.log(nameLocalStorage)
+
+});
+
+buttonSend.addEventListener("click", () => {
+
+  localStorage.setItem("pokemonadd", JSON.stringify(pokemonAdd.value))
+
+  const nameLocalStorage = JSON.parse(localStorage.getItem("pokemonadd"))
+
+  console.log(nameLocalStorage)
+
+});
+
+buttonSend.addEventListener("click", () => {
+
+  localStorage.setItem("typepokemon", JSON.stringify(typePokemon.value))
+
+  const nameLocalStorage = JSON.parse(localStorage.getItem("typepokemon"))
+
+  console.log(nameLocalStorage)
+
+});
+
+buttonSend.addEventListener("click", () => {
+
+  localStorage.setItem("generationpokemon", JSON.stringify(generationPokemon.value))
+
+  const nameLocalStorage = JSON.parse(localStorage.getItem("generationpokemon"))
+
+  console.log(nameLocalStorage)
+
+});
+
+buttonSend.addEventListener("click", () => {
+
+  localStorage.setItem("idpokemon", JSON.stringify(idPokemon.value))
+
+  const nameLocalStorage = JSON.parse(localStorage.getItem("idpokemon"))
+
+  console.log(nameLocalStorage)
 
 })
