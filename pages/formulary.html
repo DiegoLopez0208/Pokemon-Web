@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/img/LogoPokeball(1).ico"/>
+    <title>Formulary</title>
+</head>
+<body class ="bodyform">
+        <header>
+            <nav class="navbar">
+                <a href="/index.html" class "nav-branding">
+                    <img src="/assets/img/PikachuIcon.webp" alt="Icon" class="navbar-icon">
+                </a>
+            <ul class ="nav-menu">
+                <li class="nav-item">
+                    <a href="/pages/pokedex.html" class="nav-link"><img src="/assets/img/PokedexIcon.webp" alt="Pokedex Icon Navbar" class="navbar-icon2">
+                        <h3>Pokedex</h3></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/pokeball.html" class="nav-link">
+                        <img src="/assets/img/pokeballicon.webp" alt="Pokeball Icon Navbar" class="navbar-icon2">
+                    <h3>Pokeballs</h3></a>
+                </li>
+            </ul>
+                <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main class ="mainform">
+    <div class="container">
+        <div class="title">Check in!</div>
+        <form action="#">
+            <div class="users-details" id="form">
+                <div class="input-box">
+                    <span class="details">Name:</span>
+                    <input pattern="[a-zA-Z]{4,20}"class="name" id="name" type="text" placeholder="Enter your name..." required>
+                    <span class="input-incorrect" id ="input-incorrect">Only letters are allowed!</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last name:</span>
+                    <input pattern="[a-zA-Z]{4,20}" class="last-name" id="last-name"type="text" placeholder="Enter your last name..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">What pokemon would you like to add?:</span>
+                    <input pattern="[a-zA-Z]{4,20}" class="pokemon-add" id="pokemon-add" type="text" placeholder="Write the name of the pokemon..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">What type is the pokemon?:</span>
+                    <input pattern="[a-zA-Z]{4,20}" class="type-pokemon" id="type-pokemon" type="text" placeholder="Write the type of pokemon..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">What generation is the pokemon?:</span>
+                    <input pattern="[a-zA-Z]{4,20}" class="generation-pokemon" id="generation-pokemon"type="text" placeholder="Write the generation of the pokemon..." required>
+                    <span class="input-incorrect">Only letters are allowed!</span>
+                </div>
+                <div class="input-box">
+                    <span class="details">What is the id of the pokemon:</span>
+                    <input class="id-pokemon" type="number" id="id-pokemon" placeholder="Write the id of the pokemon..." required>
+                    <span class="input-incorrect-numbers">Only numbers are allowed!</span>
+            </div>
+        </div>
+        <div class="button-submit" id="button-submit" style="display: grid">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="footer-content"> <!-- Footer -->
+        
+        <h3>
+            <img src="/assets/img/PikachuIcon.webp" alt="Pikachu Logo Icon" class="navbar-icon">
+            Pokedex & Pokeballs
+            <img src="/assets/img/LogoPokeball(1).ico" alt="Pikachu Logo Icon" class="navbar-icon">
+        </h3>
+        <!-- About Us  -->
+        <p>Our project consists of being able to add a list of pokemons and pokeballs in the period that more information about the new generations is being added, in order to inform about the changes and new things that are being added.</p>
+        <ul class="socials">
+            <li>
+                <a href="https://www.linkedin.com/in/diego-lopez-138a89265/" target="_blank"> <!-- Github-->
+                    <img src="/assets/img/linkedin.webp" alt="Linkedin Icon" class="socialImg">
+                </a>
+                <a href="https://github.com/DiegoLopez0208" target="_blank"> <!-- Linkedin-->
+                    <img src="/assets/img/github.webp" alt="Github Icon" class="socialImg">
+                </a>
+                <p class="centered-text">Diego Lopez</p>
+            </li>
+            <li>
+                <a href="https://github.com/Quintana-MN" target="_blank"><!-- Github-->
+                    <img src="/assets/img/github.webp" alt="Github Icon" class="socialImg">
+                </a>
+                <a href="https://www.linkedin.com/in/matias-nicolas-quintana-6620b0243/" target=”_blank”> <!-- Linkedin-->
+                    <img src="/assets/img/linkedin.webp" alt="Linkedin Icon" class="socialImg">
+                </a>
+                <p class="centered-text">Nicolas Quintana</p>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023 Pokedex & Pokeballs. Designed by <span>Diego Lopez - Nicolas Quintana</span></p>  <!-- Copyright -->
+        </div>
+    </div>
+
+    <script src="/javascript/script2.js"></script>
+</body>
+</html>

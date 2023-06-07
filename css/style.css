@@ -127,7 +127,7 @@ h1{
     
     
 }
-/*Gif Start (Easter Egg)*/
+/*Gif Start*/
 .startIMG{
     transform : translateX(-50%) translateY(-50%);
     position: absolute;
@@ -137,7 +137,8 @@ h1{
     height: 358px;
 }
 /*Hidden (Easter Egg) Button*/
-.hiddenButton{
+ /* ~ Clarification: It was not done due to lack of time, the idea of playing a turn-based game (Pokemon Player Vs Bot Combat Style)  ~ */
+/*.hiddenButton{
     transform : translateX(-50%) translateY(-50%);
     position:absolute;
     left: 50%;
@@ -145,7 +146,8 @@ h1{
     width: 250px;
     height: 50px;
     opacity:0;
-}
+}*/ 
+
 /*Container Splash Screen and Animation*/
 /*Animation Container*/
 .animationContainer {
@@ -381,7 +383,7 @@ width: 40px;
     border-radius: 10%;
     text-align: center;
     padding: 1.5rem;
-    background-image: url(/assets/img/background-image-cards.jpg);
+    background-image: url(/assets/img/background-image-cards.webp);
     background-size: cover;
     min-height: 400px;
     color: black;
@@ -608,6 +610,120 @@ footer{
     width: 50px;
     height: 50px;
 }
+/* Formulary Style Css */
+.bodyform {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/BackgroundForm.webp);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.mainform{
+    margin: 180px;
+    display:flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #f4f4f4;
+    padding: 30px 30px;
+    border-radius: 7px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 113px;
+    background-color: #910daf;
+}
+
+.container form .users-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.input-correct {
+    position: relative;
+    top: 10px;
+    color: red;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.input-incorrect {
+    position: relative;
+    top: 10px;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+}
+
+.input-incorrect-numbers {
+    position: relative;
+    top: 10px;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+}
+
+form .users-details .input-box {
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+.users-details .input-box .details {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.users-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.users-details .input-box input:focus {
+    border-color: #910daf;
+}
+
+.button-submit > button {
+    padding: 20px 50px;
+    color: #fafafa;
+    border: none;
+    border-radius: 5px;
+    background-color: #910daf;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.button-submit > button:hover {
+    transition: all 0.4s ease;
+    background-color: black;
+}
+
 /* KEYFRAMES ANIMATIONS */
 
 @keyframes animation-pokemons-opacity {
@@ -731,6 +847,16 @@ background-color: #F6CF57;
 
 
 }
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+    form .users-details .input-box {
+        margin-bottom: 20px;
+        width: 100%
+    }
+}
+
 @media only screen and (min-width: 600px){
 .pikachu-button{
     width:100px;
